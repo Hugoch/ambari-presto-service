@@ -127,6 +127,10 @@
           "subsection-name": "subsection-general-config"
         },
         {
+          "config": "config.properties/query.max-total-memory-per-node",
+          "subsection-name": "subsection-general-config"
+        },
+        {
           "config": "config.properties/discovery.uri",
           "subsection-name": "subsection-general-config"
         },
