@@ -49,7 +49,7 @@ class TestCoordinator(unittest.TestCase):
         presto_coordinator.install(self.mock_env)
         assert execute_mock.call_count is 2
         assert 'wget' in execute_mock.call_args_list[0][0][0]
-        assert 'rpm -i' in execute_mock.call_args_list[1][0][0]
+        assert 'rpm -i --replacepkgs' in execute_mock.call_args_list[1][0][0]
         assert 'export JAVA8_HOME=' in execute_mock.call_args_list[1][0][0]
         execute_mock.reset_mock()
 
