@@ -88,6 +88,26 @@
     </value-attributes>
   </property>
 
+  <property>
+    <name>query.max-total-memory-per-node</name>
+    <value>1.25GB</value>
+    <description>
+      The maximum amount of user + system memory that a query may use on any one machine.
+      This value has to be higher than query.max-memory-per-node.
+
+      If you'd like to enter a value higher than the maximum on the slider,
+      click on the pencil that appears when you hover over the setting and
+      ignore that higher values are not recommended.
+    </description>
+    <value-attributes>
+      <type>int</type>
+      <minimum>0</minimum>
+      <maximum>100</maximum>
+      <increment-step>1</increment-step>
+      <unit>GB</unit>
+    </value-attributes>
+  </property>
+
   <property require-input="true">
     <name>discovery.uri</name>
     <value></value>

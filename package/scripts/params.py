@@ -28,7 +28,7 @@ connectors_to_delete = config['configurations']['connectors.properties']['connec
 daemon_control_script = '/etc/init.d/presto'
 config_directory = '/etc/presto'
 
-memory_configs = ['query.max-memory-per-node', 'query.max-memory']
+memory_configs = ['query.max-memory-per-node', 'query.max-memory', 'query.max-total-memory-per-node']
 
 host_info = config['clusterHostInfo']
 

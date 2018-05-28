@@ -176,7 +176,7 @@
       {
         "config": "config.properties/http-server.http.port",
         "widget": {
-          "type": "text-area"
+          "type": "text-field"
         }
       },
       {
@@ -192,6 +192,17 @@
       },
       {
         "config": "config.properties/query.max-memory-per-node",
+        "widget": {
+          "type": "slider",
+          "units": [
+            {
+              "unit-name": "GB"
+            }
+          ]
+        }
+      },
+      {
+        "config": "config.properties/query.max-total-memory-per-node",
         "widget": {
           "type": "slider",
           "units": [
