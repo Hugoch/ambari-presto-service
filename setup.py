@@ -25,7 +25,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 test_requirements = [
-    'tox==1.9.2',
+    'tox==3.0.0',
     'nose==1.3.7',
     'mock==1.0.1',
 ]
